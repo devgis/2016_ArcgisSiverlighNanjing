@@ -1,0 +1,61 @@
+﻿<cs:ChildWindow x:Class="SilverlightGIS.Information.InfoList" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:dc="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:cs="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="信息列表">
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="100*"></ColumnDefinition>
+            <ColumnDefinition Width="300*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="Bisque"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center">
+            <TextBlock Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Text="信息列表"/>
+        </StackPanel>
+
+        <dc:DataGrid Name="myDataList" IsReadOnly="True" GridLinesVisibility="All" AutoGenerateColumns="False" Grid.Row="5" Grid.RowSpan="5" Grid.Column="1" Grid.ColumnSpan="2"  HorizontalAlignment="Left" FontSize="16" >
+            <dc:DataGrid.Columns>
+                <dc:DataGridTextColumn Visibility="Collapsed" Header="ID" Width="200" IsReadOnly="True"   Binding="{Binding ID,Mode=TwoWay}" />
+                <dc:DataGridTextColumn Header="作者" Width="200" IsReadOnly="True"   Binding="{Binding Author,Mode=TwoWay}" />
+                <dc:DataGridTextColumn Header="标题" Width="200" IsReadOnly="True" Binding="{Binding Title,Mode=TwoWay}" />
+                <dc:DataGridTextColumn Header="内容" Width="200" IsReadOnly="True" Binding="{Binding Content,Mode=TwoWay}" />
+                <dc:DataGridTextColumn Header="时间" Width="200" IsReadOnly="True"  Binding="{Binding Time,Mode=TwoWay}" />
+                <dc:DataGridTemplateColumn Width="200">
+                    <dc:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <Button Name="btDelRow" Click="btDelRow_Click" Content="删除" Tag="{Binding ID,Mode=TwoWay}" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" />
+                                <Button Name="btViewRow" Click="btViewRow_Click" Content="查看" Tag="{Binding ID,Mode=TwoWay}" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </dc:DataGridTemplateColumn.CellTemplate>
+                </dc:DataGridTemplateColumn>
+            </dc:DataGrid.Columns>
+        </dc:DataGrid>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <Button Name="btAdd" Click="btAdd_Click"  Content="添加" FontSize="16"  Width="120" Height="30" Margin="0,0,10,0"></Button>
+            <Button Name="btCancel" Click="btCancel_Click"  Content="关闭" FontSize="16" Width="120" Height="30" Margin="10,0,0,0"></Button>
+        </StackPanel>
+    </Grid>
+</cs:ChildWindow>

@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightGIS", "SilverlightGIS\SilverlightGIS.csproj", "{2D5180FF-09A2-4C04-A55D-BB7856E36BB6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3F713A8-788C-4A38-9839-F46606351821} = {C3F713A8-788C-4A38-9839-F46606351821}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightGIS.Web", "SilverlightGIS.Web\SilverlightGIS.Web.csproj", "{C3F713A8-788C-4A38-9839-F46606351821}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightGIS.Common", "SilverlightGIS.Common\SilverlightGIS.Common.csproj", "{CACDA543-4E45-4B9C-895F-A72DFD6828F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D5180FF-09A2-4C04-A55D-BB7856E36BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D5180FF-09A2-4C04-A55D-BB7856E36BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D5180FF-09A2-4C04-A55D-BB7856E36BB6}.Debug|x86.ActiveCfg = Debug|x86
+		{2D5180FF-09A2-4C04-A55D-BB7856E36BB6}.Debug|x86.Build.0 = Debug|x86
+		{2D5180FF-09A2-4C04-A55D-BB7856E36BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D5180FF-09A2-4C04-A55D-BB7856E36BB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D5180FF-09A2-4C04-A55D-BB7856E36BB6}.Release|x86.ActiveCfg = Release|x86
+		{2D5180FF-09A2-4C04-A55D-BB7856E36BB6}.Release|x86.Build.0 = Release|x86
+		{C3F713A8-788C-4A38-9839-F46606351821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F713A8-788C-4A38-9839-F46606351821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F713A8-788C-4A38-9839-F46606351821}.Debug|x86.ActiveCfg = Debug|x86
+		{C3F713A8-788C-4A38-9839-F46606351821}.Debug|x86.Build.0 = Debug|x86
+		{C3F713A8-788C-4A38-9839-F46606351821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F713A8-788C-4A38-9839-F46606351821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F713A8-788C-4A38-9839-F46606351821}.Release|x86.ActiveCfg = Release|x86
+		{C3F713A8-788C-4A38-9839-F46606351821}.Release|x86.Build.0 = Release|x86
+		{CACDA543-4E45-4B9C-895F-A72DFD6828F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACDA543-4E45-4B9C-895F-A72DFD6828F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACDA543-4E45-4B9C-895F-A72DFD6828F7}.Debug|x86.ActiveCfg = Debug|x86
+		{CACDA543-4E45-4B9C-895F-A72DFD6828F7}.Debug|x86.Build.0 = Debug|x86
+		{CACDA543-4E45-4B9C-895F-A72DFD6828F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACDA543-4E45-4B9C-895F-A72DFD6828F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACDA543-4E45-4B9C-895F-A72DFD6828F7}.Release|x86.ActiveCfg = Release|x86
+		{CACDA543-4E45-4B9C-895F-A72DFD6828F7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

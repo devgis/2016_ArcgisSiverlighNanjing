@@ -1,0 +1,2 @@
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS
+Generated_Code\SilverlightGIS.Web.g.cs

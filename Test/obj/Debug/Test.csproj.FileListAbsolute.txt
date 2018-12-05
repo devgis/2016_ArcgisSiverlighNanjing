@@ -1,0 +1,13 @@
+D:\Work\2016\SilverlightArcgis\SilverlightGIS16\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\Work\2016\SilverlightArcgis\SilverlightGIS16\Test\obj\Debug\Test.Form1.resources
+D:\Work\2016\SilverlightArcgis\SilverlightGIS16\Test\obj\Debug\Test.Properties.Resources.resources
+D:\Work\2016\SilverlightArcgis\SilverlightGIS16\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\Test\bin\Debug\Test.exe.config
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\Test\bin\Debug\Test.exe
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\Test\bin\Debug\Test.pdb
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\Test\obj\Debug\Test.Form1.resources
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\Test\obj\Debug\Test.Properties.Resources.resources
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\Test\obj\Debug\Test.exe
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\Test\obj\Debug\Test.pdb

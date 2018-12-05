@@ -1,0 +1,16 @@
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Web\bin\SilverlightGIS.Web.dll.config
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Web\bin\SilverlightGIS.Web.dll
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Web\bin\SilverlightGIS.Web.pdb
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Web\bin\SilverlightGIS.Common.dll
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Web\bin\SilverlightGIS.Common.pdb
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Web\obj\Debug\SilverlightGIS.Web.csprojResolveAssemblyReference.cache
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Web\obj\Debug\SilverlightGIS.Web.dll
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Web\obj\Debug\SilverlightGIS.Web.pdb
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Web\bin\SilverlightGIS.Web.dll.config
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Web\bin\SilverlightGIS.Web.dll
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Web\bin\SilverlightGIS.Web.pdb
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Web\bin\SilverlightGIS.Common.dll
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Web\bin\SilverlightGIS.Common.pdb
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Web\obj\Debug\SilverlightGIS.Web.csprojResolveAssemblyReference.cache
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Web\obj\Debug\SilverlightGIS.Web.dll
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Web\obj\Debug\SilverlightGIS.Web.pdb

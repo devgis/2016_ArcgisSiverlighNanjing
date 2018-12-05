@@ -1,0 +1,9 @@
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Common\bin\Debug\SilverlightGIS.Common.dll
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Common\bin\Debug\SilverlightGIS.Common.pdb
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Common\obj\Debug\SilverlightGIS.Common.dll
+D:\Work\2016\SilverlightArcgis\SilverlightGIS\SilverlightGIS.Common\obj\Debug\SilverlightGIS.Common.pdb
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Common\bin\Debug\SilverlightGIS.Common.dll
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Common\bin\Debug\SilverlightGIS.Common.pdb
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Common\obj\Debug\SilverlightGIS.Common.csprojResolveAssemblyReference.cache
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Common\obj\Debug\SilverlightGIS.Common.dll
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Common\obj\Debug\SilverlightGIS.Common.pdb

@@ -1,0 +1,2 @@
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Web\SilverlightGIS.Web.csproj,635979534751229675,DBService.svc.cs,IDBService.cs,Properties\AssemblyInfo.cs,
+F:\Demo\SLGIS\SilverlightGIS\SilverlightGIS.Common\SilverlightGIS.Common.csproj,635927321614147891,Info.cs,OrderInfo.cs,Properties\AssemblyInfo.cs,SQLHelper.cs,

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DBService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:14001/DBService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:14001/DBService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:14001/DBService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SilverlightGIS.Common" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDBService_GetInfoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoList" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_GetInfoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_AddInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_AddInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_EditInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_EditInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_DeleteInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_DeleteInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_GetOrderList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderList" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_GetOrderList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_AddOrderInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrderInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_AddOrderInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrderInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_EditOrderInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditOrderInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_EditOrderInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditOrderInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_DeleteOrderInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrderInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_DeleteOrderInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrderInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_AddUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUser" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_AddUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_EditUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditUser" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_EditUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_CheckUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUser" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_CheckUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_UserExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserExists" />
+  </wsdl:message>
+  <wsdl:message name="IDBService_UserExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserExistsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDBService">
+    <wsdl:operation name="GetInfoList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/GetInfoList" message="tns:IDBService_GetInfoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/GetInfoListResponse" message="tns:IDBService_GetInfoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/AddInfo" message="tns:IDBService_AddInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/AddInfoResponse" message="tns:IDBService_AddInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/EditInfo" message="tns:IDBService_EditInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/EditInfoResponse" message="tns:IDBService_EditInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/DeleteInfo" message="tns:IDBService_DeleteInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/DeleteInfoResponse" message="tns:IDBService_DeleteInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/GetOrderList" message="tns:IDBService_GetOrderList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/GetOrderListResponse" message="tns:IDBService_GetOrderList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/AddOrderInfo" message="tns:IDBService_AddOrderInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/AddOrderInfoResponse" message="tns:IDBService_AddOrderInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditOrderInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/EditOrderInfo" message="tns:IDBService_EditOrderInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/EditOrderInfoResponse" message="tns:IDBService_EditOrderInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrderInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/DeleteOrderInfo" message="tns:IDBService_DeleteOrderInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/DeleteOrderInfoResponse" message="tns:IDBService_DeleteOrderInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/AddUser" message="tns:IDBService_AddUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/AddUserResponse" message="tns:IDBService_AddUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/EditUser" message="tns:IDBService_EditUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/EditUserResponse" message="tns:IDBService_EditUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/CheckUser" message="tns:IDBService_CheckUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/CheckUserResponse" message="tns:IDBService_CheckUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDBService/UserExists" message="tns:IDBService_UserExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDBService/UserExistsResponse" message="tns:IDBService_UserExists_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDBService" type="tns:IDBService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetInfoList">
+      <soap:operation soapAction="http://tempuri.org/IDBService/GetInfoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddInfo">
+      <soap:operation soapAction="http://tempuri.org/IDBService/AddInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditInfo">
+      <soap:operation soapAction="http://tempuri.org/IDBService/EditInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInfo">
+      <soap:operation soapAction="http://tempuri.org/IDBService/DeleteInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderList">
+      <soap:operation soapAction="http://tempuri.org/IDBService/GetOrderList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrderInfo">
+      <soap:operation soapAction="http://tempuri.org/IDBService/AddOrderInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditOrderInfo">
+      <soap:operation soapAction="http://tempuri.org/IDBService/EditOrderInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrderInfo">
+      <soap:operation soapAction="http://tempuri.org/IDBService/DeleteOrderInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap:operation soapAction="http://tempuri.org/IDBService/AddUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditUser">
+      <soap:operation soapAction="http://tempuri.org/IDBService/EditUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <soap:operation soapAction="http://tempuri.org/IDBService/CheckUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserExists">
+      <soap:operation soapAction="http://tempuri.org/IDBService/UserExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DBService">
+    <wsdl:port name="BasicHttpBinding_IDBService" binding="tns:BasicHttpBinding_IDBService">
+      <soap:address location="http://localhost:14001/DBService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
